@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form action="{% url 'home' %}" method="POST">
+		{% csrf_token %}
+		<ul>
+		{{form.as_ul}}
+		</ul>
+		<input type="submit" name="submit">
+
+	</form>
+</body>
+</html>
